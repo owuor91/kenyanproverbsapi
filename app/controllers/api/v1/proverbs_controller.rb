@@ -19,7 +19,7 @@ module Api::V1
       @proverb = Proverb.new(proverb_params)
 
       if @proverb.save
-        render json: @proverb, status: :created, location: @proverb
+        render json: @api_v1_proverb, status: :created, location: @api_v1_proverb
       else
         render json: @proverb.errors, status: :unprocessable_entity
       end
