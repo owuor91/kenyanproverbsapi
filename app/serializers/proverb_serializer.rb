@@ -1,3 +1,3 @@
 class ProverbSerializer < ActiveModel::Serializer
-  attributes :text
+  attributes :id, :text
 end
